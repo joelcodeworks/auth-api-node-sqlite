@@ -20,7 +20,7 @@ Supports user registration,login and acces to protected routes.
 4.bcrypt
 5.JSON Web token (JWT)
 
-#Purpose
+# Purpose
 The goal of this project is to learn how to implement authentication in a real backend application.
 
 # Example usage
