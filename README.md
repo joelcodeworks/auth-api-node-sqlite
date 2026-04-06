@@ -3,20 +3,20 @@
 Backend API with a complete authentication system using JWT and bcrypt.
 Supports user registration,login and acces to protected routes.
 
-# Features
+## Features
 
 -User registration with encrypted passwords (bcrypt)
 -User login
 -JWT token generation
 -Protected routes using authentication middleware
 
-# Endpoints
+## Endpoints
 
 -POST /register -> Register a new user
 -POST /login -> User login
 -GET /profile -> Protected route (requires token)
 
-# Tech Stack
+## Tech Stack
 
 1.Node.js
 2.Express
@@ -24,38 +24,38 @@ Supports user registration,login and acces to protected routes.
 4.bcrypt
 5.JSON Web token (JWT)
 
-# Purpose
+## Purpose
 
 The goal of this project is to learn how to implement authentication in a real backend application.
 
-# Example usage
+## Example usage
 
 1.Register a new user
 2.Login to obtain a token
 3.Use the token to access protected routes
-Header:
+**Header**:
 Authorization: Bearer TOKEN
 
-# Technical Decisions
+## Technical Decisions
 
 -JWT for stateless authentication
 -bcrypt for password hashing
 -SQLite for simplicity and portability
 -Middleware to separate authentication logic
 
-# Project Improvements
+## Project Improvements
 
 -Refactored routes using express.Router()
 -Separated business logic into controllers
 -Improved project structure and maintainability
 
-# Debugging Experience
+## Debugging Experience
 
 -Isue: Request was hanging
 -Cause: Missing response in controller
 -Solution: Added response handling (res.json)
 
-# Login Flow
+## Login Flow
 
 1.The user sends email and password via POST request
 2.The server validates input  fields
@@ -65,7 +65,7 @@ Authorization: Bearer TOKEN
 6.The server returns the token and user data
 7.The token is used to access protected routes
 
-# Possible Errors
+## Possible Errors
 
 -User not found
 -Incorrect password
@@ -73,14 +73,14 @@ Authorization: Bearer TOKEN
 -Invalid token
 -Brute force attacks (not implemented yet)
 
-# Limitations
+## Limitations
 
 -No rate limiting
 -No refresh tokens
 -No advanced input validation
 -No automated testing
 
-# What i learned
+## What i learned
 
 1.How to implement authentication with JWT
 2.Using bcrypt for password security
