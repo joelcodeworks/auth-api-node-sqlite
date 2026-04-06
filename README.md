@@ -1,19 +1,23 @@
 # User Authentication API (Node.js + SQLite)
+
 Backend API with a complete authentication system using JWT and bcrypt.
 Supports user registration,login and acces to protected routes.
 
 # Features
+
 -User registration with encrypted passwords (bcrypt)
 -User login
 -JWT token generation
 -Protected routes using authentication middleware
 
 # Endpoints
+
 -POST /register -> Register a new user
 -POST /login -> User login
 -GET /profile -> Protected route (requires token)
 
 # Tech Stack
+
 1.Node.js
 2.Express
 3.SLite
@@ -21,9 +25,11 @@ Supports user registration,login and acces to protected routes.
 5.JSON Web token (JWT)
 
 # Purpose
+
 The goal of this project is to learn how to implement authentication in a real backend application.
 
 # Example usage
+
 1.Register a new user
 2.Login to obtain a token
 3.Use the token to access protected routes
@@ -44,6 +50,7 @@ Authorization: Bearer TOKEN
 -Improved project structure and maintainability
 
 # Debugging Experience
+
 -Isue: Request was hanging
 -Cause: Missing response in controller
 -Solution: Added response handling (res.json)
@@ -59,6 +66,7 @@ Authorization: Bearer TOKEN
 7.The token is used to access protected routes
 
 # Possible Errors
+
 -User not found
 -Incorrect password
 -Missing fields
@@ -66,6 +74,7 @@ Authorization: Bearer TOKEN
 -Brute force attacks (not implemented yet)
 
 # Limitations
+
 -No rate limiting
 -No refresh tokens
 -No advanced input validation
