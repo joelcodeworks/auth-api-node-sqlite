@@ -3,7 +3,7 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const db = require('../db/database');
 
-// Clave secreta para JWT (en proyecto real, usar variable de entorno)
+// Clave secreta para JWT (en proyecto real usar variable de entorno)
 const JWT_SECRET = "mi_secreto_para_jwt";
 
 const login = (req, res) => {
@@ -43,7 +43,8 @@ const login = (req, res) => {
         { expiresIn: '1h' }
       );
 
-      // Responder con token
+
+      // Responder con token y usuario
       res.status(200).json({
         message: "Login correcto",
         token,
